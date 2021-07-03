@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Portfolio</title>
+		<title>John Makarios</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -11,199 +11,227 @@
 
 		<!-- Header -->
 			<div id="header">
-				<!-- <span class="logo icon fa-paper-plane"></span> -->
 				<img src="images/me.png" alt="Picture of me" width="200" />
 				<h1>Hello there. This is John.</h1>
 				<p>An innovative programmer with a passion for coding and embracing challenges.<br /> 
 				On a forever journey of professional growth, as well as learning from and sharing with other creatives.
-				</p>
+				</p><br />
+				<a href="#" class="button">Resume</a>
 			</div>
 
 		<!-- Main -->
 			<div id="main">
 
 				<header class="major container medium">
-					<h2>“When you want to succeed
-					<br />
-					as bad as you want to breathe,
-					<br />
-					then you'll be successful.”
-					<br \>
-					― Eric Thomas, The Secret to Success
+					<h2>
+						“When you want to succeed
+						<br />
+						as bad as you want to breathe,
+						<br />
+						then you'll be successful.”
+						<br \>
+						― Eric Thomas, The Secret to Success
 					</h2>
 				</header>
 
 				<div class="box alt container">
 					<section class="feature left">
-						<a href="#" class="image icon solid fa-signal"><img src="images/pic01.jpg" alt="" /></a>
+						<button id="aboutMe" class="image icon solid fa-signal accordionButton"><img src="images/pic01.jpg" /></button>
 						<div class="content">
 							<h3>About me</h3>
 							<p>My name is John Makarios, I'm very passionate about learning and self improvement. Click here to learn more about me and what I do.</p>
 						</div>
 					</section>
 					<section class="feature right">
-						<a href="#" class="image icon solid fa-code"><img src="images/pic02.jpg" alt="" /></a>
+						<button id="myWork" class="image icon solid fa-code accordionButton"><img src="images/pic02.jpg" alt="" /></button>
 						<div class="content">
 							<h3>My work</h3>
-							<p>I always love to try new things. Never stay comftorbale. Click here to see my projects</p>
+							<p>I am not the type to be comfortable. I always love to try new things. Click here to see my projects</p>
 						</div>
 					</section>
 					<section class="feature left">
-						<a href="#" class="image icon solid fa-mobile-alt"><img src="images/pic03.jpg" alt="" /></a>
-						<div class="content">
-							<h3>Dreams & Goals</h3>
-							<p>If you want to throw a rock to the greatest extent, you need to aim as high as you can. Click here to learn more about my goals.</p>
-						</div>
+						<button id="dreams" class="image icon solid fa-mobile-alt accordionButton"><img src="images/pic03.jpg" alt="" /></button>
+							<div class="content">
+								<h3>Dreams & Goals</h3>
+								<p>If you want to throw a rock to the greatest extent, you need to aim as high as you can. Click here to learn more about my goals.</p>
+							</div>
 					</section>
 				</div>
 
-				<!--
-				<div class="box container">
-					<header>
-						<h2>A lot of generic stuff</h2>
-					</header>
-					<section>
+				<div id="accordionContent">
+					<div id="aboutMeContent" class="box container accordion">
 						<header>
-							<h3>Paragraph</h3>
-							<p>This is the subtitle for this particular heading</p>
+							<h2>About me</h2>
 						</header>
-						<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
-						habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
-						leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
-						amet risus elit.</p>
-					</section>
-					<section>
+						<section>
+						</section>
+					</div>
+
+					<div id="myWorkContent" class="box container accordion">
 						<header>
-							<h3>Blockquote</h3>
+							<h2>My work</h2>
 						</header>
-						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
-						tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
-					</section>
-					<section>
+						<section>
+						</section>
+					</div>
+
+					<div id="dreamsContent" class="box container accordion">
 						<header>
-							<h3>Divider</h3>
+							<h2>Dreams & Goals</h2>
 						</header>
-						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-						posuere cubilia.</p>
-						<hr />
-						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-						posuere cubilia.</p>
-					</section>
-					<section>
-						<header>
-							<h3>Unordered List</h3>
-						</header>
-						<ul class="default">
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						</ul>
-					</section>
-					<section>
-						<header>
-							<h3>Ordered List</h3>
-						</header>
-						<ol class="default">
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						</ol>
-					</section>
-					<section>
-						<header>
-							<h3>Table</h3>
-						</header>
-						<div class="table-wrapper">
-							<table class="default">
-								<thead>
-									<tr>
-										<th>ID</th>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>45815</td>
-										<td>Something</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>24524</td>
-										<td>Nothing</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>45815</td>
-										<td>Something</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>24524</td>
-										<td>Nothing</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>19.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="3"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>
-					<section>
-						<header>
-							<h3>Form</h3>
-						</header>
-						<form method="post" action="#">
-							<div class="row">
-								<div class="col-6 col-12-mobilep">
-									<label for="name">Name</label>
-									<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
-								</div>
-								<div class="col-6 col-12-mobilep">
-									<label for="email">Email</label>
-									<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-								</div>
-								<div class="col-12">
-									<label for="subject">Subject</label>
-									<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-								</div>
-								<div class="col-12">
-									<label for="subject">Message</label>
-									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-								</div>
-								<div class="col-12">
-									<ul class="actions special">
-										<li><input type="submit" value="Send" /></li>
-										<li><input type="reset" value="Reset" class="alt" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</section>
+						<section>
+						</section>
+					</div>
 				</div>
-				-->
+
+				<!--<div class="box container">
+		<header>
+			<h2>A lot of generic stuff</h2>
+		</header>
+		<section>
+			<header>
+				<h3>Paragraph</h3>
+				<p>This is the subtitle for this particular heading</p>
+			</header>
+			<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+			habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
+			leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
+			amet risus elit.</p>
+		</section>
+		<section>
+			<header>
+				<h3>Blockquote</h3>
+			</header>
+			<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
+			tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
+		</section>
+		<section>
+			<header>
+				<h3>Divider</h3>
+			</header>
+			<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+			ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+			facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+			tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+			posuere cubilia.</p>
+			<hr />
+			<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+			ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+			facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+			tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+			posuere cubilia.</p>
+		</section>
+		<section>
+			<header>
+				<h3>Unordered List</h3>
+			</header>
+			<ul class="default">
+				<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+				<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+				<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+				<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+			</ul>
+		</section>
+		<section>
+			<header>
+				<h3>Ordered List</h3>
+			</header>
+			<ol class="default">
+				<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+				<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+				<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+				<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+			</ol>
+		</section>
+		<section>
+			<header>
+				<h3>Table</h3>
+			</header>
+			<div class="table-wrapper">
+				<table class="default">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Description</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>45815</td>
+							<td>Something</td>
+							<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+							<td>29.99</td>
+						</tr>
+						<tr>
+							<td>24524</td>
+							<td>Nothing</td>
+							<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+							<td>19.99</td>
+						</tr>
+						<tr>
+							<td>45815</td>
+							<td>Something</td>
+							<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+							<td>29.99</td>
+						</tr>
+						<tr>
+							<td>24524</td>
+							<td>Nothing</td>
+							<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+							<td>19.99</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="3"></td>
+							<td>100.00</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>Form</h3>
+			</header>
+			<form method="post" action="#">
+				<div class="row">
+					<div class="col-6 col-12-mobilep">
+						<label for="name">Name</label>
+						<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
+					</div>
+					<div class="col-6 col-12-mobilep">
+						<label for="email">Email</label>
+						<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+					</div>
+					<div class="col-12">
+						<label for="subject">Subject</label>
+						<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+					</div>
+					<div class="col-12">
+						<label for="subject">Message</label>
+						<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+					</div>
+					<div class="col-12">
+						<ul class="actions special">
+							<li><input type="submit" value="Send" /></li>
+							<li><input type="reset" value="Reset" class="alt" /></li>
+						</ul>
+					</div>
+				</div>
+			</form>
+		</section>
+	</div>-->
+
 
 				<footer class="major container medium">
 					<h3>Feedback Leads to Success</h3>
-					<p>I am not perfect, and never will be. I learned to receive <br />feedback from others with grace and gratitude, rather than resistance.<br />
-					My success comes from the acceptance of the opportunity to grow and develop.</p>
+					<p>
+						I am not perfect, and never will be. I learned to receive <br />feedback from others with grace and gratitude, rather than resistance.<br />
+						My success comes from the acceptance of the opportunity to grow and develop.
+					</p>
 					<textarea name="feedback" placeholder="Feedback" rows="2"></textarea>
 					<ul class="actions special">
 						<li><a href="#" class="button">Leave Feedback</a></li>
@@ -231,21 +259,24 @@
 								<input type="email" name="email" placeholder="Email" />
 							</div>
 							<div class="col-12">
+								<textarea name="subject" placeholder="Subject" rows="1"></textarea>
+							</div>
+							<div class="col-12">
 								<textarea name="message" placeholder="Message" rows="6"></textarea>
 							</div>
 							<div class="col-12">
 								<ul class="actions special">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send" /></li>
 								</ul>
 							</div>
 						</div>
 					</form>
 					<p>Or</p>
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="mailto:johnmkrios@gmail.com" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
+						<li><a href="https://github.com/johnmkrios" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instagram.com/itsjzhn" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.facebook.com/johnmkrios" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					</ul>
 
 					<ul class="copyright">
