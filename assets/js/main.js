@@ -33,7 +33,7 @@ $(".accordionButton").click(function () {
 		"opacity": "0",
 		"display": "block",
 	}).show().animate({ opacity: 1 })
-	document.querySelector(`#${this.id + "Content"}`).scrollIntoView({
+	document.querySelector("#accordionContent").scrollIntoView({
 		behavior: 'smooth'
 	});
 });
