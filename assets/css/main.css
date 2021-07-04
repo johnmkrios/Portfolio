@@ -2622,7 +2622,9 @@ input, select, textarea {
 		position: relative;
 		height: 20em;
 	}
-
+		.feature button {
+			min-height: 20em;
+		}
 		.feature:after {
 			clear: both;
 			content: '';
