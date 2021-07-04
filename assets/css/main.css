@@ -2177,6 +2177,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+
 	}
 
 		.image:after {
@@ -3017,7 +3018,7 @@ input, select, textarea {
 		/* Feature */
 
 			.feature {
-				height: 18em;
+				height: 20em;
 			}
 
 				.feature .content {
