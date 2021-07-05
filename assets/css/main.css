@@ -2711,19 +2711,25 @@ input, select, textarea {
 			padding-top: 0;
 		}
 
-/* Header */
+/* Header*/
 
 	#header {
-		background-attachment: scroll,							fixed,					fixed;
-		background-image: url("images/top-3200.svg"), url("images/mainHeader.jpg"), url("../../images/header.jpg");
-		background-position: bottom center,					top center,				center center;
-		background-repeat: repeat-x,						    repeat,					no-repeat;
-		background-size: 3200px 460px,							  contain,					cover;
+		background-attachment: scroll,							fixed;
+		background-image: url("images/top-3200.svg"), url("images/mainHeader.jpg");
+		background-position: bottom center,					top center;
+		background-repeat: repeat-x,						     repeat-x;
+		background-size: 3200px 460px,							  contain;
 		color: rgba(255, 255, 255, 0.8);
 		padding: 10em 0 20em 0;
 		position: relative;
 		text-align: center;
+		background-color: black;
 	}
+		#header span {
+			background: linear-gradient( to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6) ) ;
+			border-radius: 10px;
+			text-shadow: 0 1px 0 black;
+		}
 
 		#header:before, #header:after {
 			background: rgba(224, 224, 224, 0.75);
@@ -2736,7 +2742,7 @@ input, select, textarea {
 
 		#header:before {
 			height: calc(100% - 50px);
-			opacity: 0.15;
+			opacity: 0;
 			top: 0;
 		}
 
@@ -3030,10 +3036,11 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				background-attachment: scroll,							 fixed,							scroll;
-				background-image: url("images/top-1600.svg"), url("images/mainHeader.jpg"), url("../../images/header.jpg");
-				background-size: 1600px 230px,					contain,							cover;
+				background-attachment: scroll,							 fixed;
+				background-image: url("images/top-1600.svg"), url("images/mainHeader.jpg");
+				background-size: 1600px 230px,					contain;
 				padding: 6em 0 12em 0;
+				background-color: black;
 			}
 
 				#header:before {
@@ -3183,9 +3190,10 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				background-image: url("images/top-1280.svg"), url("images/mainHeader.jpg"), url("../../images/header.jpg");
-				background-size: 1280px 184px,					        575px,							cover;
+				background-image: url("images/top-1280.svg"), url("images/mainHeader.jpg");
+				background-size: 1280px 184px,					        575px;
 				padding: 3em 0 7em 0;
+				background-color: black;
 			}
 
 				#header:before {
