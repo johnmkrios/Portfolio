@@ -2264,14 +2264,14 @@ input, select, textarea {
 			display: inline-block;
 			position: relative;
 			border-radius: 100px;
-			margin: 15px;
+			margin: 0px 5px 0px 0px;
 		}
 
 			.rounded img {
 				display: block;
 				border-radius: 100px;
-				height: 250px;
-				width: 250px;
+				height: 225px;
+				width: 225px;
 			}
 
 				.rounded.icon:hover:after {
@@ -2295,15 +2295,14 @@ input, select, textarea {
 					color: white;
 					opacity: 0;
 					position: absolute;
-					font-size: 25px;
-					margin: -165px 0px 0px -75px;
+					margin: -145px 0px 0px -100px;
 					-webkit-transition: all 300ms ease-in-out;
 					-o-transition: all 300ms ease-in-out;
 					transition: all 300ms ease-in-out;
 				}
 
 					.imgtext p {
-						font-size: 46pt;
+						font-size: 40pt;
 						font-family: 'Trebuchet MS';
 						font-weight: 400;
 					}
@@ -2415,6 +2414,19 @@ input, select, textarea {
 			text-decoration: none;
 			cursor: pointer;
 		}
+	.modalInfo{
+		display: flex;
+	}
+	.modalVideo{
+		margin: 0 40px 0 0;
+	}
+	.modalVideo video{
+		width: 600px;
+	}
+	.modalInfo{
+		margin: 0;
+	}
+
 
 /* Actions */
 
@@ -3180,6 +3192,23 @@ input, select, textarea {
 				padding: 4em 0 3em 0;
 			}
 
+		/*MODALS*/
+
+		.modalInfo {
+			display: block;
+			padding: 0 50px 50px 50px;
+			
+		}
+
+		.modalVideo {
+			margin: 0 0 25px 0;
+			margin-left: 10%;
+		}
+
+			.modalVideo video {
+				width: 600px;
+			}
+
 	}
 
 /* Narrow */
@@ -3193,7 +3222,23 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
-	}
+		/*MODALS*/
+
+		.modalInfo {
+			display: block;
+			padding: 0 50px 50px 50px;
+		}
+
+		.modalVideo {
+			margin: 0 0 25px 0;
+			margin-left: 2%;
+		}
+
+			.modalVideo video {
+				width: 550px;
+			}
+
+
 
 /* Narrower */
 
@@ -3211,6 +3256,20 @@ input, select, textarea {
 				padding-right: 2em;
 			}
 
+		/*MODALS*/
+
+		.modalInfo {
+			display: block;
+			padding: 0 30px 30px 30px;
+		}
+
+		.modalVideo {
+			margin: 0 0 20px 0;
+		}
+
+			.modalVideo video {
+				width: 450px;
+			}
 	}
 
 /* Mobile */
@@ -3231,7 +3290,7 @@ input, select, textarea {
 			}
 
 		.imgtext {
-			margin: 0px 0px 0px -25px;
+			margin: 0px 0px 0px -37px;
 			color: #5b5b5b;
 			opacity: 1;
 		}
@@ -3367,6 +3426,21 @@ input, select, textarea {
 				padding: 2em 0 2em 0;
 			}
 
+		/*MODALS*/
+
+		.modalInfo {
+			display: block;
+			padding: 0 20px 20px 20px;
+		}
+
+		.modalVideo {
+			margin: 0 0 20px 0;
+			
+		}
+
+			.modalVideo video {
+				width: 350px;
+			}
 	}
 
 /* Mobile (Portrait) */
@@ -3387,7 +3461,7 @@ input, select, textarea {
 			}
 
 		.imgtext {
-			margin: 0px 0px 0px -25px;
+			margin: 0px 0px 0px -34px;
 			color: #5b5b5b;
 			opacity: 1;
 		}
@@ -3468,5 +3542,20 @@ input, select, textarea {
 				#header br {
 					display: none;
 				}
+
+		/*MODALS*/
+
+		.modalInfo {
+			display: block;
+			padding: 0 10px 10px 10px;
+		}
+
+		.modalVideo {
+			margin: 0 0 20px 0;
+		}
+
+			.modalVideo video {
+				width: 200px;
+			}
 
 	}
