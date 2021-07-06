@@ -23,6 +23,31 @@
 
 })(jQuery);
 
+//Open Apps
+$(".appButton").click(function () {
+	var selectedModal = document.getElementById(`${this.id + "Modal"}`);
+	$(selectedModal).css({
+		"display": "block",
+	})
+});
+
+//Close Apps
+$(".close").click(function () {
+	$(".modal").css({
+		"display": "none",
+	})
+});
+
+//Close Apps by clicking outside
+$("body").click(function () {
+	if (!$(".modal").css("display") == "none") {
+		$(".modal").css({
+			"display": "none",
+		})
+	}
+});
+
+//Accordion buttons
 $(".accordionButton").click(function () {
 
 	$("#accordionContent div").css({
@@ -33,7 +58,7 @@ $(".accordionButton").click(function () {
 		"opacity": "0",
 		"display": "block",
 	}).show().animate({ opacity: 1 })
-	document.querySelector("#accordionContent").scrollIntoView({
+	document.querySelector(`#${this.id + "Content"}`).scrollIntoView({
 		behavior: 'smooth'
 	});
 });
