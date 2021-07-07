@@ -2357,6 +2357,13 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+/*Portait Video*/
+
+		#portaitVideo {
+			margin: 0px 70px 0px 70px;
+			width: 350px;
+		}
+
 /* List */
 
 	ol.default {
@@ -3095,6 +3102,12 @@ input, select, textarea {
 					line-height: 1.65em;
 				}
 
+		/*Portait Video*/
+
+		#portaitVideo {
+			width: 350px;
+		}
+
 	}
 
 /* Normal */
@@ -3210,6 +3223,13 @@ input, select, textarea {
 				width: 600px;
 			}
 
+		/*Portait Video*/
+
+		#portaitVideo {
+			width: 350px;
+			padding-left: 120px;
+		}
+
 	}
 
 /* Narrow */
@@ -3238,6 +3258,14 @@ input, select, textarea {
 			.modalVideo video {
 				width: 550px;
 			}
+
+		/*Portait Video*/
+
+		#portaitVideo {
+			width: 350px;
+			padding-left: 115px;
+		}
+	}
 
 
 
@@ -3271,6 +3299,12 @@ input, select, textarea {
 			.modalVideo video {
 				width: 450px;
 			}
+		/*Portait Video*/
+
+		#portaitVideo {
+			width: 220px;
+			padding-left: 25px;
+		}
 	}
 
 /* Mobile */
@@ -3442,6 +3476,12 @@ input, select, textarea {
 			.modalVideo video {
 				width: 350px;
 			}
+
+		#portaitVideo {
+			width: 200px;
+			padding-left: 20px;
+		}
+
 	}
 
 /* Mobile (Portrait) */
@@ -3558,5 +3598,10 @@ input, select, textarea {
 			.modalVideo video {
 				width: 200px;
 			}
+
+		#portaitVideo {
+			width: 100px;
+			padding-left: 0px;
+		}
 
 	}
