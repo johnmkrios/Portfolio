@@ -63,3 +63,22 @@ $(".accordionButton").click(function () {
 	});
 });
 
+//Feedback button
+$("#feedbackBtn").click(function () {
+
+	$("#feedbackBtn").css({
+		"background-color": "seagreen",
+	})
+	$("#feedbackBtn").html("Thank You");
+	$("#feedback").val('');
+	document.getElementById("feedback").readOnly = "true";
+	$("#feedback").attr("placeholder", "Your feedback is appreciated.");
+});
+
+$(document).ready(function () {
+	$("#downloadResume").click(function (e) {
+		e.preventDefault();
+		window.location.href = "files/Resume.pdf";
+	});
+});
+
