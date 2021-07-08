@@ -70,6 +70,8 @@ $("#feedbackBtn").click(function () {
 		"background-color": "seagreen",
 	})
 	$("#feedbackBtn").html("Thank You");
+	//var feedback = $("#feedback").val();
+	//saveAs(feedback, "feedback.txt");
 	$("#feedback").val('');
 	document.getElementById("feedback").readOnly = "true";
 	$("#feedback").attr("placeholder", "Your feedback is appreciated.");
