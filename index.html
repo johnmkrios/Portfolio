@@ -11,7 +11,6 @@
 
 		<!-- Header -->
 			<div id="header">
-				<!--<img src="images/me.png" alt="Picture of me" width="200" />-->
 				<br /><br />
 				<h1><span>Hey there. This is John.</span></h1>
 				<p><span>An innovative programmer with a passion for coding and embracing challenges.<br /> 
@@ -129,7 +128,7 @@
 							</p>
 							<p>
 								<b>Traveling: </b>
-								Each country that I have been to has shaped my personality a certain way. Unfortunately, I have only been to 3 countries other than Canada, Egypt, which is where I am from, Germany and Austria.
+								Each country that I have been to has shaped my personality a certain way. I have been to multiple countries other than Canada. I have been to Egypt, which is where I am from, and Europe a couple of times.
 								I can't wait to see more of the world once the pandemic is over!
 							</p>
 							<p>
@@ -160,13 +159,13 @@
 							<hr />
 							<section>
 								<h4>Applications</h4>
-								<button id="findIt" class="rounded icon appButton">
-									<img src="images/findIt.png" alt="FindIt" />
-									<span class="imgtext"><p>&nbsp;&nbsp;FindIt</p></span>
-								</button>
 								<button id="jmakFlights" class="rounded icon appButton">
 									<img src="images/jmakFlights.png" alt="J-Mak Flights" />
 									<span class="imgtext"><p>&nbsp;&nbsp;J-Mak</p></span>
+								</button>
+								<button id="findIt" class="rounded icon appButton">
+									<img src="images/findIt.png" alt="FindIt" />
+									<span class="imgtext"><p>&nbsp;&nbsp;FindIt</p></span>
 								</button>
 								<button id="VTracker" class="rounded icon appButton">
 									<img src="images/VTracker.png" alt="Employee Data Tracker" />
@@ -176,31 +175,19 @@
 							<hr />
 							<section>
 								<h4>Websites</h4>
+								<button id="taraClothing" class="rounded icon appButton">
+									<img src="images/taraClothing.png" alt="Tara Clothing" />
+									<span class="imgtext"><p>&nbsp;&nbsp;&nbsp;Tara</p></span>
+								</button>
+								<button id="notes" class="rounded icon appButton">
+									<img src="images/notes.png" alt="Notes" />
+									<span class="imgtext"><p>&nbsp;&nbsp;Notes</p></span>
+								</button>
 								<button id="paymentReport" class="rounded icon appButton">
 									<img src="images/paymentReport.jpg" alt="Customer Payment Report" />
 									<span class="imgtext"><p>Reporter</p></span>
 								</button>
-								<button id="taraClothing" class="rounded icon appButton">
-									<img src="images/taraClothing.png" alt="Tara Clothing" />
-									<span class="imgtext"><p>&nbsp;&nbsp;&nbsp;Tara</p></span>
-								</button>
-								<!--<button id="taraClothing" class="rounded icon appButton">
-									<img src="images/taraClothing.png" alt="Tara Clothing" />
-									<span class="imgtext"><p>&nbsp;&nbsp;&nbsp;Tara</p></span>
-								</button>-->
 							</section>
-							<!--<hr />
-							<section>
-								<h4>Side Projects</h4>
-								<button id="taraClothing" class="rounded icon appButton">
-									<img src="images/taraClothing.png" alt="Tara Clothing" />
-									<span class="imgtext"><p>&nbsp;&nbsp;&nbsp;Tara</p></span>
-								</button>
-								<button id="taraClothing" class="rounded icon appButton">
-									<img src="images/taraClothing.png" alt="Tara Clothing" />
-									<span class="imgtext"><p>&nbsp;&nbsp;&nbsp;Tara</p></span>
-								</button>
-							</section>-->
 						</div>
 					</div>
 
@@ -211,7 +198,7 @@
 							<h2>FindIt</h2>
 							<div class="modalInfo">
 								<section class="modalVideo ">
-									<video id="portaitVideo" controls autoplay muted loop >
+									<video id="portaitVideo" controls autoplay muted loop>
 
 										<source src="videos/findIt.mp4"
 												type="video/mp4">
@@ -251,9 +238,11 @@
 								</section>
 								<section class="modalText">
 									<h4>Description </h4>
-									<p>J-Mak Flights is a data management software created using <strong>C#</strong>, <strong>WPF</strong> and <strong>XML data binding</strong>. 
-									This software acts as a platform for all users to access and edit data. J-Mak Flights is designed to dynamically populate parameters with data 
-									from a real database such as MySQL or MongoDB. </p>
+									<p>
+										J-Mak Flights is a data management software created using <strong>C#</strong>, <strong>WPF</strong> and <strong>XML data binding</strong>.
+										This software acts as a platform for all users to access and edit data. J-Mak Flights is designed to dynamically populate parameters with data
+										from a real database such as MySQL or MongoDB.
+									</p>
 									<h4>Functionality </h4>
 									<ul class="default">
 										<li>Different account types with extra privileges granted to the Super account type.</li>
@@ -344,13 +333,47 @@
 									<h4>Description </h4>
 									<p>
 										Tara Clothing is a web app created using <strong>Angular</strong> and <strong>jQuery</strong> that helps customers browse through Tara Clothing's products.
-									<h4>Functionality </h4>
-									<ul class="default">
-										<li>Populates the website with data 
-									from a real database such as MySQL or MongoDB</li>
-										<li>Sorting products by categories for comfort and efficiency.</li>
-										<li>Real-time data updates.</li>
-									</ul>
+										<h4>Functionality </h4>
+										<ul class="default">
+											<li>
+												Populates the website with data
+												from a real database such as MySQL or MongoDB
+											</li>
+											<li>Sorting products by categories for comfort and efficiency.</li>
+											<li>Real-time data updates.</li>
+										</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+
+					<div id="notesModal" class="modal">
+						<div class="modalContent">
+							<span class="close">&times;</span>
+							<h2>Notes</h2>
+							<div class="modalInfo">
+								<section class="modalVideo">
+									<video controls autoplay muted loop>
+
+										<source src="videos/notes.mp4"
+												type="video/mp4">
+
+										Your browser doesn't support embedded videos.
+									</video>
+								</section>
+								<section class="modalText">
+									<h4>Description </h4>
+									<p>
+										Tara Clothing is a web app created using <strong>Angular</strong> and <strong>jQuery</strong> that helps customers browse through Tara Clothing's products.
+										<h4>Functionality </h4>
+										<ul class="default">
+											<li>
+												Populates the website with data
+												from a real database such as MySQL or MongoDB
+											</li>
+											<li>Sorting products by categories for comfort and efficiency.</li>
+											<li>Real-time data updates.</li>
+										</ul>
 								</section>
 							</div>
 						</div>
@@ -405,28 +428,6 @@
 
 					<p>Send me an E-Mail or contact me on one of my socials.</p>
 
-					<!--<form method="post" action="#">
-						<div class="row">
-							<div class="col-6 col-12-mobilep">
-								<input type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-mobilep">
-								<input type="email" name="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<textarea name="subject" placeholder="Subject" rows="1"></textarea>
-							</div>
-							<div class="col-12">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions special">
-									<li><input type="submit" value="Send" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-					<p>Or</p>-->
 					<ul class="icons">
 						<li><a href="mailto:johnmkrios@gmail.com" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
 						<li><a href="https://www.linkedin.com/in/johnmakarios" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
