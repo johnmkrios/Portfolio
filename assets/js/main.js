@@ -65,13 +65,15 @@ $(".accordionButton").click(function () {
 
 //Feedback button
 $("#feedbackBtn").click(function () {
-
+	//Save feedback to file
+	//var blob = new Blob(["test"],
+	//	{ type: "text/plain;charset=utf-8" });
+	//saveAs(blob, "feedback.txt");
+	
 	$("#feedbackBtn").css({
 		"background-color": "seagreen",
 	})
 	$("#feedbackBtn").html("Thank You");
-	//var feedback = $("#feedback").val();
-	//saveAs(feedback, "feedback.txt");
 	$("#feedback").val('');
 	document.getElementById("feedback").readOnly = "true";
 	$("#feedback").attr("placeholder", "Your feedback is appreciated.");
