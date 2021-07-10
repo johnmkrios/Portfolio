@@ -138,7 +138,7 @@
 							</p>
 							<p>
 								<b>Music Production: </b>
-								My love for producing stems from my love for music. I make beats using FL Studio 20. My favorite genre is Hip-Hop/Rap.
+								My love for producing music stems from my love for music. I make beats using FL Studio 20. My favorite genre is Hip-Hop/Rap.
 							</p>
 						</div>
 					</div>
@@ -420,10 +420,13 @@
 							I am not perfect, and never will be. I learned to receive <br />feedback from others with grace and gratitude, rather than resistance.<br />
 							My success comes from the acceptance of the opportunity to grow and develop.
 						</p>
-						<textarea id="feedback" placeholder="Feedback" rows="2"></textarea>
-						<ul class="actions special">
-							<li><button id="feedbackBtn" class="button" style="font-size: 17px;">Leave Feedback</button></li>
-						</ul>
+						<form method="POST" data-netlify="true">
+							<textarea id="feedback" placeholder="Feedback" rows="2"></textarea>
+							<div data-netlify-recaptcha="true"></div>
+							<ul class="actions special">
+								<li><button id="feedbackBtn" type="submit" class="button" style="font-size: 17px;">Leave Feedback</button></li>
+							</ul>
+						</form>
 					</footer>
 
 				</div>
