@@ -2115,6 +2115,9 @@ input, select, textarea {
 			background: rgba(224, 224, 224, 0.15);
 			border-color: darkslategray;
 		}
+		.error::-webkit-input-placeholder {
+			 color: crimson;
+		}
 
 	input[type="text"],
 	input[type="password"],

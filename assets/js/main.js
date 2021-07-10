@@ -65,18 +65,37 @@ $(".accordionButton").click(function () {
 
 //Feedback button
 $("#feedbackBtn").click(function () {
-	//Save feedback to file
-	//var blob = new Blob(["test"],
-	//	{ type: "text/plain;charset=utf-8" });
-	//saveAs(blob, "feedback.txt");
-	
-	$("#feedbackBtn").css({
-		"background-color": "seagreen",
-	})
-	$("#feedbackBtn").html("Thank You");
-	$("#feedback").val('');
-	document.getElementById("feedback").readOnly = "true";
-	$("#feedback").attr("placeholder", "Your feedback is appreciated.");
+	if ($("#feedbackTextarea").is("[readonly]")) { }
+	else {
+		if (!$("#feedbackTextarea").val() || $("#feedbackTextarea").val().trim() == "") {
+			$("#feedbackTextarea").css({
+				"border": "1px solid crimson",
+			})
+			$("#feedbackTextarea").addClass("error");
+			$("#errorMsg").css({
+				"display": "block",
+			})
+		} else {
+
+			$("#feedbackBtn").css({
+				"background-color": "seagreen",
+			})
+			$("#feedbackBtn").html("Thank You");
+
+			$("#feedbackTextarea").val('');
+			$("#feedbackTextarea").css({
+				"border": "none",
+			})
+			$("#feedbackTextarea").removeClass("error");
+			$("#errorMsg").css({
+				"display": "none",
+			})
+
+			document.getElementById("feedback").readOnly = "true";
+			$("#feedbackTextarea").attr("placeholder", "Your feedback is appreciated.");
+
+		}
+	}
 });
 
 $(document).ready(function () {
