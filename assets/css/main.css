@@ -2173,6 +2173,10 @@ input, select, textarea {
 		color: inherit;
 		opacity: 0.5;
 	}
+	.g-recaptcha div:first-child
+	{
+		margin: auto;
+	}
 
 /* Image */
 
