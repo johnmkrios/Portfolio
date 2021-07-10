@@ -65,13 +65,13 @@ $(".accordionButton").click(function () {
 
 //Feedback button
 $("#feedbackBtn").click(function () {
-	if ($("#feedbackTextarea").is("[readonly]")) { }
+	if ($("#feedback").is("[readonly]")) { }
 	else {
-		if (!$("#feedbackTextarea").val() || $("#feedbackTextarea").val().trim() == "") {
-			$("#feedbackTextarea").css({
+		if (!$("#feedback").val() || $("#feedback").val().trim() == "") {
+			$("#feedback").css({
 				"border": "1px solid crimson",
 			})
-			$("#feedbackTextarea").addClass("error");
+			$("#feedback").addClass("error");
 			$("#errorMsg").css({
 				"display": "block",
 			})
@@ -82,17 +82,16 @@ $("#feedbackBtn").click(function () {
 			})
 			$("#feedbackBtn").html("Thank You");
 
-			$("#feedbackTextarea").val('');
-			$("#feedbackTextarea").css({
+			$("#feedback").css({
 				"border": "none",
 			})
-			$("#feedbackTextarea").removeClass("error");
+			$("#feedback").removeClass("error");
 			$("#errorMsg").css({
 				"display": "none",
 			})
 
 			document.getElementById("feedback").readOnly = "true";
-			$("#feedbackTextarea").attr("placeholder", "Your feedback is appreciated.");
+			$("#feedback").attr("placeholder", "Your feedback is appreciated.");
 
 		}
 	}
