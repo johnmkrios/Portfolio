@@ -75,6 +75,7 @@ $("#feedbackBtn").click(function () {
 			$("#errorMsg").css({
 				"display": "block",
 			})
+			$("#feedback").val('');
 		} else {
 
 			$("#feedbackBtn").css({
