@@ -420,10 +420,12 @@
 							I am not perfect, and never will be. I learned to receive <br />feedback from others with grace and gratitude, rather than resistance.<br />
 							My success comes from the acceptance of the opportunity to grow and develop.
 						</p>
-						<form method="POST" action="/success" data-netlify="true">
-							<div>
-								<textarea name="feedback" id="feedback" placeholder="Feedback" rows="2"></textarea>
-							</div>
+						
+						<form method="POST" action="success.html" data-netlify="true">
+							<label for="name">Name —<span style="font-weight: lighter; font-size: 90%;"> Optional</span></label>
+							<textarea name="name" id="name" placeholder="Name" rows="1" style="resize: none; width: 30%;"></textarea>
+							<label for="feedback">Feedback</label>
+							<textarea name="feedback" id="feedback" placeholder="Feedback" rows="2"></textarea>
 							<br />
 							<!--<div data-netlify-recaptcha="true" ></div>-->
 							<ul class="actions special">
@@ -431,6 +433,7 @@
 							</ul>
 							<p id="errorMsg" style="color: crimson; display: none;">Feedback can't be empty</p>
 						</form>
+						
 					</footer>
 
 				</div>

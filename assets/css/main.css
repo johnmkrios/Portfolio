@@ -2079,6 +2079,7 @@ input, select, textarea {
 		line-height: 1.75em;
 		text-transform: uppercase;
 		margin: 0 0 0.5em 0;
+		text-align: left;
 	}
 
 	input[type="text"],
@@ -2175,8 +2176,8 @@ input, select, textarea {
 	}
 	.g-recaptcha div:first-child
 	{
-		margin: auto;
-	}
+	 margin: auto;
+    }
 
 /* Image */
 
