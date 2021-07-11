@@ -63,7 +63,7 @@ $(".accordionButton").click(function () {
 	});
 });
 
-//Feedback button
+//Feedback button CSS
 $("#feedbackBtn").click(function () {
 	if ($("#feedback").is("[readonly]")) { }
 	else {
@@ -97,10 +97,20 @@ $("#feedbackBtn").click(function () {
 	}
 });
 
+//Feedback button handling submit
+const element = document.querySelector('form');
+element.addEventListener('submit', event => {
+	if (!$("#feedback").val() || $("#feedback").val().trim() == "") {
+		event.preventDefault();
+	}
+});
+
+//Download 
 $(document).ready(function () {
 	$("#downloadResume").click(function (e) {
 		e.preventDefault();
 		window.location.href = "files/Resume.pdf";
 	});
 });
+
 
