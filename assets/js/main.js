@@ -113,7 +113,7 @@ $("#feedbackBtn").click(function () {
 $(document).ready(function () {
 	$("#downloadResume").click(function (e) {
 		e.preventDefault();
-		window.location.href = "files/Resume.pdf";
+		window.open("files/Resume.pdf");
 	});
 });
 
