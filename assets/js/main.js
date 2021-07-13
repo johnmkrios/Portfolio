@@ -117,4 +117,10 @@ $(document).ready(function () {
 	});
 });
 
-
+$('body').click(function (event) {
+	if (event.target.className == "modal") {
+		$(".modal").css({
+			"display": "none",
+		})
+	}
+});
