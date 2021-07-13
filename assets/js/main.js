@@ -63,9 +63,18 @@ $(".accordionButton").click(function () {
 	});
 });
 
+var submitted = 0;
+//Feedback button handling submit
+const element = document.querySelector('form');
+element.addEventListener('submit', event => {
+	if (!$("#feedback").val() || $("#feedback").val().trim() == "" || submitted>=2) {
+		event.preventDefault();
+	}
+});
+
 //Feedback button CSS
 $("#feedbackBtn").click(function () {
-	if ($("#feedback").is("[readonly]")) { }
+	if ($("#feedback").is("[readonly]")) { submitted++; }
 	else {
 		if (!$("#feedback").val() || $("#feedback").val().trim() == "") {
 			$("#feedback").css({
@@ -92,17 +101,11 @@ $("#feedbackBtn").click(function () {
 			})
 
 			document.getElementById("feedback").readOnly = "true";
+			document.getElementById("name").readOnly = "true";
 			$("#feedback").attr("placeholder", "Your feedback is appreciated.");
+			submitted++;
 
 		}
-	}
-});
-
-//Feedback button handling submit
-const element = document.querySelector('form');
-element.addEventListener('submit', event => {
-	if (!$("#feedback").val() || $("#feedback").val().trim() == "") {
-		event.preventDefault();
 	}
 });
 
