@@ -111,10 +111,18 @@ $("#feedbackBtn").click(function () {
 
 //Download 
 $(document).ready(function () {
-	$("#downloadResume").click(function (e) {
-		e.preventDefault();
-		window.open("files/Resume.pdf");
-	});
+	var resumeIsAvailable = false
+	if (resumeIsAvailable) {
+		$("#downloadResume").click(function (e) {
+			e.preventDefault();
+			window.open("files/Resume.pdf");
+		});
+	} else {
+		$("#downloadResume").click(function (e) {
+			e.preventDefault();
+			alert("John's resume is currently not available ");
+		});
+	}
 });
 
 $('body').click(function (event) {

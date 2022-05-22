@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 	<body class="is-preload">
-
+		
 		<!-- Header -->
 			<div id="header">
 				<br /><br />
@@ -43,7 +43,7 @@
 						<button id="myWork" class="image icon accordionButton"><img width="50" src="images/myWork.jpg" alt="My Work" /></button>
 						<div class="content">
 							<h3>My work</h3>
-							<p>I am not the type to be comfortable. I always try new things. Click here to see some my projects</p>
+							<p>I am not the type to be comfortable. I always try new things. Click to see some my projects</p>
 						</div>
 					</section>
 
@@ -59,6 +59,10 @@
 									<img src="images/jmakFlights.png" alt="J-Mak Flights" />
 									<span class="imgtext"><p>&nbsp;&nbsp;J-Mak</p></span>
 								</button>
+								<!--<button id="findIt" class="rounded icon appButton">
+						<img src="images/findIt.png" alt="FindIt" />
+						<span class="imgtext"><p>&nbsp;&nbsp;FindIt</p></span>
+					</button>-->
 								<button id="VTracker" class="rounded icon appButton">
 									<img src="images/VTracker.png" alt="Employee Data Tracker" />
 									<span class="imgtext"><p>VTracker</p></span>
@@ -88,7 +92,7 @@
 						<button id="aboutMe" class="image icon accordionButton"><img width="50" src="images/aboutMe.jpg" alt="About Me" /></button>
 						<div class="content">
 							<h3>About me</h3>
-							<p>My name is John Makarios, I'm very passionate about learning and self improvement. Click here to learn more about me and what I do.</p>
+							<p>My name is John Makarios, I'm very passionate about learning and self improvement. Click to learn more about me and what I do.</p>
 						</div>
 					</section>
 
@@ -105,39 +109,40 @@
 										<th>Programming</th>
 										<th>Technologies</th>
 										<th>Systems</th>
-										<th>Databases</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>Java</td>
-										<td>Angular</td>
+										<td>Kubernetes</td>
 										<td>Unix</td>
-										<td>Oracle</td>
+									</tr>
+									<tr>
+										<td>GoLang</td>
+										<td>gRPC & Protocol Buffers</td>
+										<td>Linux</td>
 									</tr>
 									<tr>
 										<td>JavaScript</td>
-										<td>WPF</td>
-										<td>Linux</td>
-										<td>MySQL</td>
-									</tr>
-									<tr>
-										<td>C#</td>
-										<td>jQuery</td>
+										<td>JSON</td>
 										<td>Windows</td>
-										<td>MongoDB</td>
 									</tr>
 									<tr>
 										<td>C++</td>
+										<td>MySQL</td>
 									</tr>
 									<tr>
 										<td>SQL</td>
+										<td>WPF</td>
 									</tr>
 									<tr>
-										<td>XML</td>
+										<td>C#</td>
+										<td>Angular</td>
+										
 									</tr>
 									<tr>
 										<td>HTML</td>
+										<td>jQuery</td>
 									</tr>
 								</tbody>
 							</table>
@@ -155,7 +160,8 @@
 							</ul>
 							<hr />
 							<h4>Education</h4>
-							<p><b>Sheridan College | Computer Programming Diploma &nbsp;&nbsp;&nbsp;</b> Aug 2021</p>
+							<span><img src="./images/sheridan-logo.jpg" width="30px"/></span>
+							<p><b>Sheridan College | Computer Programming Diploma &nbsp;&nbsp;&nbsp;</b>Aug 2021</p>
 							<ul class="default">
 								<li>Maintained 3.5 GPA in Java programming classes.</li>
 								<li>Worked with multiple different teams and averaged 90% on all team projects.</li>
@@ -163,12 +169,9 @@
 							</ul>
 							<hr />
 							<h4>Professional Experience</h4>
-							<p><b>Tim Horton’s | Team Member &nbsp;&nbsp;&nbsp;</b> Dec 2018 - Present</p>
+							<span><img src="./images/cibc-logo.jpg" width="30px"/></span>
+							<p><b>CIBC Capital Markets | Sr. Application Developer &nbsp;&nbsp;&nbsp;</b> Nov 2021 - Present</p>
 							<ul class="default">
-								<li>Worked on one of the fastest performing teams in the region.</li>
-								<li>Was given the responsibility of managing and tracking inventory.</li>
-								<li>Was assigned to receive orders from the warehouse. </li>
-								<li>Was entrusted with the task of onboarding and preparing new trainees for the job.</li>
 							</ul>
 							<hr />
 							<h4>Hobbies</h4>
@@ -198,6 +201,34 @@
 
 
 					<!-- MODALS -->
+					<!--<div id="findItModal" class="modal">
+			<div class="modalContent">
+				<span class="close">&times;</span>
+				<h2>FindIt</h2>
+				<div class="modalInfo">
+					<section class="modalVideo ">
+						<video id="portaitVideo" controls autoplay muted loop>
+
+							<source src="videos/findIt.mp4"
+									type="video/mp4">
+
+							Your browser doesn't support embedded videos.
+						</video>
+					</section>
+					<section class="modalText">
+						<h4>Description </h4>
+						<p>FindIt is a mobile app created using <strong>JavaScript</strong>, <strong>HMTL</strong> and <strong>CSS</strong>, that allows users to browse through screenshots from the Lighthouse.</p>
+						<h4>Functionality </h4>
+						<ul class="default">
+							<li>Generating different screenshots using URL patterns.</li>
+							<li>Invalid URLs will be disregarded automatically</li>
+							<li>Only the screenshots will be displayed after the page is done loading. Other elements will be disregarded.</li>
+							<li>Users are able to retrieve old screenshots by clicking the back button.</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>-->
 
 					<div id="jmakFlightsModal" class="modal">
 						<div class="modalContent">
@@ -362,7 +393,7 @@
 						<button id="dreams" class="image icon accordionButton"><img width="50" src="images/dreams.jpg" alt="" /></button>
 						<div class="content">
 							<h3>Dreams & Goals</h3>
-							<p>If you want to throw a rock to the greatest extent, you need to aim as high as you can. Click here to learn more about my goals.</p>
+							<p>If you want to throw a rock to the greatest extent, you need to aim as high as you can. Click to learn more about my goals.</p>
 						</div>
 					</section>
 
@@ -436,11 +467,12 @@
 					</ul>
 
 					<ul class="copyright">
-						<li>Created by John Makarios</a></li>
+						<li>Created by John Makarios</li>
 					</ul>
 
 				</div>
 			</div>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
